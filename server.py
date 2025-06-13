@@ -14,7 +14,7 @@ print('Server web attivo su http://localhost:8080/')
 # Logging base su file
 logging.basicConfig(filename='server.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-# MIME Types per i vari file (aggiungi qui altri tipi se necessario)
+# MIME Types per i vari file
 MIME_TYPES = {
     'html': 'text/html',
     'css': 'text/css',
@@ -33,7 +33,7 @@ def get_content_type(filename):
 
 def serve_file(filepath):
     # Legge il file richiesto dal client
-    # Se è immagine/risorsa binaria -> modalità binaria ('rb')
+    # Se è immagine/risorsa binaria passa a modalità binaria ('rb')
     ext = filepath.split('.')[-1]
     mode = 'rb' if ext in ['jpg', 'jpeg', 'png', 'gif', 'ico'] else 'r'
 
@@ -72,7 +72,7 @@ while True:
             header = "HTTP/1.1 200 OK\r\n"
             header += f"Content-Type: {content_type}\r\n\r\n"
 
-            # Se il contenuto è una stringa codificala in bytes
+            # Se il contenuto è una stringa codifica in bytes
             if isinstance(content, str):
                 content = content.encode()
 
