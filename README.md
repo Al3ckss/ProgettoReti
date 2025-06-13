@@ -2,11 +2,11 @@
 
 **Autore**: Chierici Alessandro
 
-## Descrizione del Progetto
+## Descrizione
 
-Questo progetto consiste nell'implementazione di un web server HTTP minimale utilizzando la libreria `socket` di Python. Il server è in grado di gestire richieste `GET`, servire un sito web statico composto da più pagine HTML e fogli di stile CSS, e gestire correttamente gli errori più comuni come le risorse non trovate (404).
+Questo progetto implementa un web server HTTP utilizzando la libreria `socket` di Python. Il servergestisce correttamente le richieste `GET`, serve un sito web statico composto da più pagine HTML e fogli di stile CSS, e gestisce correttamente l'errore di risorsa non trovata (404).
 
-Per accedere al sito, aprire un qualsiasi browser web e navigare all'indirizzo `http://localhost:8080`.
+Per accedere al sito, è necessario aprire un browser e navigare all'indirizzo `http://localhost:8080`.
 
 ## Dettagli Tecnici
 
@@ -29,6 +29,6 @@ Oltre ai requisiti minimi (server funzionante, gestione corretta di ACK/timeout,
 
 ### Estensioni Implementate
 
-* **Gestione MIME Types**: Il server rileva l'estensione del file richiesto e imposta l'header `Content-Type` appropriato (es. `text/html`, `text/css`, `image/jpeg`). Questo garantisce che il browser interpreti correttamente ogni risorsa.
-* **Logging delle Richieste**: Ogni richiesta ricevuta viene registrata in un file `server.log`, includendo data, ora, indirizzo IP del client e risorsa richiesta. Gli errori 404 vengono registrati come `WARNING` per una facile identificazione.
-* **Animazioni e Layout**: Il sito utilizza semplici animazioni CSS (`@keyframes`) per rendere più dinamica la visualizzazione dei titoli e un layout base centrato e flessibile (`max-width: 800px`) per una migliore leggibilità su diversi schermi.
+* **Gestione MIME Types**: Il server rileva l'estensione del file richiesto e imposta l'header `Content-Type` appropriato (es. `text/html`, `text/css`, `image/jpeg`).
+* **Logging delle Richieste**: Ogni richiesta ricevuta viene registrata in un file `server.log`, includendo data, ora, indirizzo IP del client e risorsa richiesta. Gli errori 404 vengono registrati come `WARNING`.
+* **Animazioni e Layout**: Il sito utilizza animazioni CSS (`@keyframes`) e un layout base centrato e flessibile (`max-width: 800px`).
