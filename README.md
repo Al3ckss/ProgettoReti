@@ -4,7 +4,7 @@
 
 ## Descrizione
 
-Questo progetto implementa un web server HTTP utilizzando la libreria `socket` di Python. Il servergestisce correttamente le richieste `GET`, serve un sito web statico composto da più pagine HTML e fogli di stile CSS, e gestisce correttamente l'errore di risorsa non trovata (404).
+Questo progetto implementa un web server HTTP utilizzando la libreria `socket` di Python. Il server gestisce correttamente le richieste `GET`, serve un sito web statico composto da più pagine HTML e fogli di stile CSS, e gestisce correttamente l'errore di risorsa non trovata (404).
 
 Per accedere al sito, è necessario aprire un browser e navigare all'indirizzo `http://localhost:8080`.
 
